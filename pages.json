@@ -1,0 +1,195 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/start/start_index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/public/condition_select",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/test_demo",
+			"style": {
+				"navigationBarTitleText": "测试"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "pages/not_barcode/stkin", //入库
+			"pages": [{
+					"path": "purpick/stkin_purpick_receive", //采购收货（接收）
+					"style": {
+						"navigationBarTitleText": "选择单据",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "other/stkin_other", //杂项入库
+					"style": {
+						"navigationBarTitleText": "选择单据",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "purpick/detail",
+					"style": {
+						"navigationBarTitleText": "采购接收"
+					}
+				},
+				{
+					"path": "other/detail",
+					"style": {
+						"navigationBarTitleText": "杂项入库"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/not_barcode/stkout", //出库
+			"pages": [{
+					"path": "prodpick/stkout_prodpick", //生产领料
+					"style": {
+						"navigationBarTitleText": "选择单据",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "prodpick/detail", //生产领料
+					"style": {
+						"navigationBarTitleText": "生产领料"
+					}
+				},
+				{
+					"path": "purpick/stkout_purpick_refund", //采购退货
+					"style": {
+						"navigationBarTitleText": "选择单据",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "other/stkout_other", //杂项出库
+					"style": {
+						"navigationBarTitleText": "选择单据",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "other/detail", //杂项出库明细
+					"style": {
+						"navigationBarTitleText": "杂项出库"
+					}
+				},
+				{
+					"path": "prodpick/detail", //生产领料
+					"style": {
+						"navigationBarTitleText": "生产领料"
+					}
+				},
+				{
+					"path": "purpick/detail", //采购退货
+					"style": {
+						"navigationBarTitleText": "采购退货"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/not_barcode/inlibrary", //出库
+			"pages": [{
+					"path": "stktran", //移库
+					"style": {
+						"navigationBarTitleText": "选择单据",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "detail", //移库
+					"style": {
+						"navigationBarTitleText": "调拨明细"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/not_barcode/inTheQuery",
+			"pages": [{
+				"path": "inQuery",
+				"style": {
+					"navigationBarTitleText": "在库查询"
+				}
+			}]
+		},
+		{
+			"root": "pages/group_disk", //包装条码方式--成品仓组盘
+			"pages": [{
+					"path": "sctray",
+					"style": {
+						"navigationBarTitleText": "生产组盘"
+					}
+				},
+				{
+					"path": "rktray",
+					"style": {
+						"navigationBarTitleText": "入库单组盘"
+					}
+				},
+				{
+					"path": "warehousing",
+					"style": {
+						"navigationBarTitleText": "入库单组盘"
+					}
+				},
+				{
+					"path": "gdisklist",
+					"style": {
+						"navigationBarTitleText": "期初组盘"
+					}
+				},
+				{
+					"path": "storagelocation",
+					"style": {
+						"navigationBarTitleText": "期初组盘"
+					}
+				},
+				{
+					"path": "successbarcode",
+					"style": {
+						"navigationBarTitleText": "期初组盘",
+						"app-plus": {
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "scanlog",
+					"style": {
+						"navigationBarTitleText": "扫描日志"
+					}
+				},
+				{
+					"path": "scandelete",
+					"style": {
+						"navigationBarTitleText": "扫描删除"
+					}
+				},
+				{
+					"path": "tray",
+					"style": {
+						"navigationBarTitleText": "期初组盘"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#666666",
+		"backgroundColor": "#666666"
+	}
+}

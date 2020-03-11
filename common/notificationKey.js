@@ -1,0 +1,1 @@
+export const NOFI_SAVEFINSH_BILL = 'NOFI_SAVEFINSH_BILL' //单据保存完成通知
